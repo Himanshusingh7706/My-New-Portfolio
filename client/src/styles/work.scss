@@ -1,0 +1,68 @@
+#work{
+    width: 100%;
+    height: 100vh;
+    padding:7rem;
+    >h2{
+        font:700 2.5rem $text2;
+        width:fit-content;
+        border-bottom: 1px solid $color6_1;
+        padding: 0.5rem;
+        margin:auto
+    }
+    >section{
+        margin-top: 1rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        width: 100%;
+        height: 100%;
+        background-color: $color5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        > article{
+            width: 70%;
+            height: 25vmax;
+        }
+        .workItem{
+            overflow-y:auto ;
+            height: 28vmax;
+            width: 97%;
+            margin: auto;
+            background-color: $color4;
+            display: flex;
+            padding: 4rem;
+            box-shadow: 0 0 20px 5px $color1;
+            >img{
+                border-radius: 20px;
+                width: 44%;
+                object-fit: cover;
+            }
+            >aside{
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+                >p{
+                letter-spacing: 3px;
+                line-height: 170%;
+                margin: 1rem;
+                }
+                >a{
+                    background-color: $color3;
+                    padding: 0.7rem 2rem;
+                    margin:  1rem;
+                    margin-bottom: 2rem;
+                  color: $color4;
+                  transition: 0.5s;
+                  &:hover{
+                    background-color: $color3_1;
+                  }
+                }
+            }
+        }
+    }
+
+}
